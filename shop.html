@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>H-Phone | Shop</title>
+
+    <!-- Your Website Favicon Icon -->
+    <link rel="icon" type="image/png" href="images/favcon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/addcart.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+</head>
+
+<body class="dark-mode">
+
+    
+
+    <section class="register-container">
+        <div class="logreg-container">
+
+            <div class="logreg-hphone-cont">
+                <img class="logreg-hphone" src="images/headlogo.png" alt="Head Phone Logo">
+                <p class="prem-headphone">Premium Headphone Audio</p>
+            </div>
+            
+            <div class="reglog">
+                <div class="social-media-icon">
+                    <p><i class="fa-brands fa-facebook"></i></p>
+                    <p><i class="fa-brands fa-twitter"></i></p>
+                    <p><i class="fa-brands fa-instagram"></i></p>
+                </div>
+                <a href="login.html">
+                    <p class="loginbtn">Log-in /</p>    
+                </a>
+
+                <a href="register.html">
+                    <p class="registerbtn">Register</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    
+   
+    <nav class="navbar-container">
+        
+        <!-- Navbar Logo -->
+            <div class="navlogo-container">
+                <a href="index.html" class="arc">
+                    <img src="images/headlogo.png" alt="navbar logo" class="navbar-logo">
+                    <span class="company-name"><span class="hphone">H</span>-phone</span>
+                </a>
+            </div>
+
+            <!-- Menu Links -->
+            <ul class="navbar-links">
+                <div class="darkmode-container">
+                    <button class="theme-btn">
+                        <i class="bx bx-sun dark-mode "></i>
+                    </button>
+                </div>
+                <li class="nav-menu active"><a href="index.html">HOME</a></li>
+                <li class="nav-menu"><a href="shop.html">SHOP</a></li>
+                <li class="nav-menu"><a href="about.html">ABOUT</a></li>
+            </ul>
+
+            <div class="icon-container">
+                <div class="icon-subcont">
+                    <i class="fa-solid fa-magnifying-glass icon-glass"></i>
+                    <i class="fa-solid fa-user icon-user"></i>
+                </div>
+
+                <div class="cart-container">
+                    <img src="images/cartitems.png" alt="cart icon" class="cart-icon">
+                    <span class="cart-number">0</span>  <!-- Badge Number in Cart-->
+                </div>
+            </div>
+
+             <!-- Burger Menu for small Device-->
+            <div class="burgerBtn-container">
+                <div class="burger-Menubtn"></div>
+                <div class="burger-Menubtn"></div>
+                <div class="burger-Menubtn"></div>
+            </div>
+            
+    </nav>
+
+
+    <!-- Cart Items Container & Searc Input field -->
+        <section>
+            <div class="search-cart-container">
+                <div class="cart-main-container">
+                    <h5>Your Items</h5>
+                    <div class="cart-image-container">  <!-- Cart Container Items Insert Here -->
+
+                        <div class="empty-container">
+                            <img src="images/cartitems.png" alt="cart icon" class="cart-icon">
+                            <span class="counter-display">Your Cart is empty!</span>
+                        </div>
+
+                    </div>
+                   
+                    <div class="checkout-container">
+                        <button class="checkoutbtn">Check Out</button>
+                    </div>
+                </div>
+
+
+                 <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass magnifying-glass"></i>
+                    <input type="text" class="searchbtn searchInput" placeholder="Search item...">
+                </div>
+            </div>
+        </section> 
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+        <section class="shop-container">
+
+            <div class="shop-glow glow-color-one"></div>
+            <div class="shop-glow glow-color-two"></div>  
+
+                <div class="shop-main-title">
+                    <h1>All <span>Products</span></h1>
+                    
+                </div>
+
+                <ul class="shop-menu-container">
+                    <li class="shop-menu active" data-title="all">Featured</li>
+                    <li class="shop-menu" data-title="Headphone">Headphones</li>
+                    <li class="shop-menu" data-title="Earphone">Earbuds</li>
+                    <li class="shop-menu" data-title="Speaker">Speakers</li>
+                    <li class="shop-menu" data-title="Cable USB">Charging Cables</li>
+                </ul>
+
+                <div class="shop-image-grid">
+                    <!-- Image load here -->
+                   
+                </div>
+
+                
+        </section>
+
+
+
+         <!-- Arrow Up  & Toast-->
+        <section>
+            <!-- ARROW UP -->
+            <div class="arrowup-container">
+                <a href="#">
+                    <i class="fa-solid fa-circle-arrow-up arrow-up"></i>
+                </a>
+            </div>
+
+            <!-- TOAST -->
+            <div class="toast" id="cartToast">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="toast-message">Added to cart!</span>
+            </div>
+        </section>
+        
+
+        <!-- SEARCHING LOADING ANIMATION -->
+        <div class="search-loading" id="searchLoading">
+
+            <div class="search-loading-content">
+                <div class="loading-number">
+                    <span id="loadingPercent">0</span>%
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+                <p id="loadingText">Searching products...</p>
+            </div>
+
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer"></div>
+    
+    <script src="js/navbar.js"></script>
+    <script type="module" src="js/shop.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/scrollanimation.js"></script>
+</body>
+
+</html>

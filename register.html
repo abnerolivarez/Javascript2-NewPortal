@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>H-Phone | Register</title>
+    <!-- Your Website Favicon Icon -->
+    <link rel="icon" type="image/png" href="images/favcon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/register.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    
+</head>
+
+
+<body>
+
+
+    <main class="register-wrapper">
+
+
+        <!-- =====================================
+             LEFT SIDE
+        ====================================== -->
+
+        <section class="register-visual">
+
+
+            <div class="brand">
+               H-Phone
+            </div>
+
+
+            <div class="visual-content">
+
+                <span>Start something new</span>
+
+                <h1>
+                    Create your
+                    <em>own world.</em>
+                </h1>
+
+                <p>
+                    Join our community and create an account
+                    to unlock a more personalized experience.
+                </p>
+
+            </div>
+
+
+            <div class="visual-footer">
+
+                Your journey begins here
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             RIGHT SIDE
+        ====================================== -->
+
+        <section class="register-form-container">
+
+
+            <form
+                class="register-form"
+                id="registerForm"
+            >
+
+
+                <div class="register-header">
+
+                    <h2>
+                        Create account.
+                    </h2>
+
+                    <p>
+                        Fill in your details to get started.
+                    </p>
+
+                </div>
+
+
+                <!-- NAME -->
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full name
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Juan Dela Cruz"
+                            autocomplete="name"
+                            required
+                        >
+
+                        <span class="input-icon">
+                            ✦
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="email@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <span class="input-icon">
+                            @
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+
+                    <div class="password-strength">
+
+                        <div
+                            class="strength-bar"
+                            id="strengthBar"
+                        ></div>
+
+                    </div>
+
+
+                    <span
+                        class="strength-text"
+                        id="strengthText"
+                    >
+                        Use at least 8 characters
+                    </span>
+
+                </div>
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Repeat your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="confirmToggle"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TERMS -->
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required
+                    >
+
+                    <span>
+                        I agree to the
+                        <a href="#">
+                            Terms of Service
+                        </a>
+                        and
+                        <a href="#">
+                            Privacy Policy
+                        </a>.
+                    </span>
+
+                </label>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="register-btn"
+                >
+                    CREATE ACCOUNT
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <div class="login-link">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Sign in
+                    </a>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+   <script src="js/register.js"></script>
+
+</body>
+</html>

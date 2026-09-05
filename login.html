@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>H-Phone | Sign In</title>
+    <!-- Your Website Favicon Icon -->
+    <link rel="icon" type="image/png" href="images/favcon.png">
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+    <main class="login-wrapper">
+
+        <!-- LEFT SIDE -->
+        <section class="login-visual">
+
+            <div class="brand">
+                H-Phone
+            </div>
+
+            <div class="visual-content">
+                <span>Welcome</span>
+                <h1>Sign in to <em>your world.</em></h1>
+                <p>
+                    Access your account and continue where
+                    you left off. Everything you need,
+                    beautifully organized in one place.
+                </p>
+            </div>
+
+            <div class="visual-footer">
+                Designed By :Abner Olivarez
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="login-form-container">
+
+            <form class="login-form" id="loginForm">
+
+                <div class="login-header">
+
+                    <h2>Sign-in Your Account  </h2>
+
+                    <p>
+                        Enter your details to access your account.
+                    </p>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="input-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="email@example.com"
+                            required
+                        >
+
+                        <span class="input-icon">
+                            @
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OPTIONS -->
+                <div class="form-options">
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                        >
+
+                        Remember me
+
+                    </label>
+
+                    <a
+                        href="#"
+                        class="forgot-password"
+                    >
+                        Forgot password?
+                    </a>
+
+                </div>
+
+
+                <!-- LOGIN -->
+                <button
+                    type="submit"
+                    class="login-btn"
+                >
+                    SIGN IN
+                </button>
+
+
+                <!-- DIVIDER -->
+                <div class="divider">
+                    Or continue with
+                </div>
+
+
+                <!-- SOCIAL -->
+                <div class="social-login">
+
+                    <button
+                        type="button"
+                        class="social-btn"
+                    >
+                        Google
+                    </button>
+
+                    <button
+                        type="button"
+                        class="social-btn"
+                    >
+                        Apple
+                    </button>
+
+                </div>
+
+
+                <!-- REGISTER -->
+                <div class="register">
+
+                    Don't have an account?
+
+                    <a href="register.html">
+                        Create account
+                    </a>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>

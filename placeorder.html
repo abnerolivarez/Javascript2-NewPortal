@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/placeorder.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet">
+
+    <title>H-Phone | Place Order</title>
+
+     <!-- Your Website Favicon Icon -->
+    <link rel="icon" type="image/png" href="images/favcon.png">
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Place Your Order</title>
+    <link rel="stylesheet" href="css/placeorder.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="dark-mode">
+
+    <main class="checkout-page">
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="checkout-header">
+
+            <span onclick="historyPage()"class="back-home">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Shop
+            </span>
+
+            <div class="checkout-logo">
+                <img src="images/headlogo.png" alt="navbar logo" class="navbar-logo">
+                <div>
+                    <span>H</span><strong>-Phone</strong>
+                </div>
+
+                
+            </div>
+
+           
+
+            <div class="secure-checkout">
+                
+                    <button class="theme-btn">
+                        <i class="bx bx-sun"></i>
+                    </button>
+                
+               
+                    <i class="fa-solid fa-lock"></i>
+                    Secure Checkout
+                
+            </div>
+            
+            
+        </header>
+
+        <div class="header-devider"></div>
+
+        
+        <!-- =========================
+             PROGRESS
+        ========================== -->
+
+        <div class="checkout-progress">
+
+            <div class="progress-step active" data-step="1">
+                <span>01</span>
+                <div class="small">
+                    <small>STEP</small>
+                    <p>Order</p>
+                </div>
+            </div>
+
+
+            <div class="progress-line " ></div>
+
+            <div class="progress-step" data-step="2">
+                <span>02</span>
+                <div class="small">
+                    <small>STEP</small>
+                    <p>Details</p>
+                </div>
+            </div>
+
+
+            <div class="progress-line "></div>
+
+
+            <div class="progress-step" data-step="3">
+                <span>03</span>
+                <div class="small">
+                    <small>STEP</small>
+                    <p>Confirmation</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <section class="checkout-wrapper">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="checkout-left">
+
+
+                <!-- ORDER INFORMATION -->
+
+                <section class="checkout-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span class="section-number">01</span>
+                            <div>
+                                <h2>Order Information</h2>
+                                <p>
+                                    Review the items in your order.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="order-items"></div>
+
+                </section>
+
+
+                <!-- CUSTOMER INFORMATION -->
+
+                <section class="checkout-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span class="section-number">02</span>
+                            <div>
+                                <h2>Customer Information</h2>
+                                <p>
+                                    Where should we send your order?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <form action="" method="POST" class="customer-form">
+
+                        <div class="input-group full">
+                            <label for="fullname">Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" id="customerName" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <input type="email" id="customerEmail" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+
+
+                            <div class="input-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" id="customerPhone" placeholder="+63 998 000 0000" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-group full">
+                            <label for="address">Delivery Address</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <textarea id="customerAddress" rows="3" placeholder="House number, street, barangay, city..."required></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="city">City / Municipality</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-city"></i>
+                                    <input type="text" id="city" placeholder="City / Municipality"required>
+                                </div>
+                            </div>
+
+
+                            <div class="input-group">
+                                <label for="postal">Postal Code</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-location-pin"></i>
+                                    <input type="text" id="postal"placeholder="Postal code"required>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </section>
+
+
+                <!-- PAYMENT METHOD-->
+
+                <section class="checkout-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span class="section-number">03</span>
+                            <div>
+                                <h2>Payment Method</h2>
+                                <p>
+                                    Choose how you'd like to pay.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="payment-options">
+                        <label class="payment-option active cod-mode">
+                            <input type="radio" name="payment" value="COD">
+
+                            <div class="payment-icon">
+                                <i class="fa-solid fa-money-bill-wave bill-wave"></i>
+                            </div>
+
+                            <div class="payment-info">
+                                <strong>Cash on Delivery</strong>
+                                <span>
+                                    Pay when your order arrives
+                                </span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check check-icon"></i>
+                        </label>
+
+
+                        <label class="payment-option gcash-mode">
+
+                            <input type="radio" name="payment" value="Gcash">
+                            <div class="payment-icon">
+                                <img src="images/gcash.png" alt="Gcash Logo">
+                            </div>
+
+                            <div class="payment-info">
+                                <strong>GCash</strong>
+                                <span>Pay securely using GCash</span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check check-icon"></i>
+                        </label>
+
+
+                        <label class="payment-option paymaya-mode">
+
+                            <input type="radio" name="payment" value="Paymaya">
+                            <div class="payment-icon">
+                                <img src="images/paymaya.png" alt="Paymaya Logo">
+                            </div>
+
+                            <div class="payment-info">
+                                <strong>Paymaya</strong>
+                                <span>Pay securely using Paymaya</span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check check-icon"></i>
+                        </label>
+
+                        <label class="payment-option installment-mode">
+
+                            <input type="radio" name="payment" value="Installment">
+                            <div class="payment-icon">
+                                <i class='bx bx-money'></i>
+                            </div>
+
+                            <div class="payment-info">
+                                <strong>Installment</strong>
+                                <span>Pay for Installment Plan</span>
+                                <span>Monthly & Yearly Interest Calculator</span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check check-icon"></i>
+                        </label>
+
+
+                        <label class="payment-option creditcard-mode">
+
+                            <input type="radio" name="payment" value="CreditCard">
+                            <div class="payment-icon">
+                                <img src="images/credit.png" alt="Credit Card">
+                            </div>
+
+                            <div class="payment-info">
+                                <strong>Credit Card</strong>
+                                <span>Pay for Credit Card | Convert USD to PHP</span>
+                            </div>
+
+                            <i class="fa-solid fa-circle-check check-icon"></i>
+                        </label>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <aside class="order-summary">
+                <div class="summary-header">
+                    <div>
+                        <span>YOUR ORDER</span>
+                        <h2>Order Summary</h2>
+                    </div>
+
+                    <div class="summary-badge">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+
+
+                <div class="summary-items"></div>
+                <div class="summary-divider"></div>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong class="subtotal">₱0</strong>
+                </div>
+
+
+                <div class="summary-row">
+                    <span>Shipping Fee</span>
+                    <strong class="shipping-fee"><span>+ </span> ₱0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Payment Mode</span>
+                    <strong class="payment-mode">None</strong>
+                </div>
+
+                <div class="summary-divider"></div>
+
+
+                <div class="total-row">
+                    <div>
+                        <span>Total</span>
+                        <small>Including shipping</small>
+                    </div>
+                    <strong class="grand-total">₱0</strong>
+                </div>
+
+
+                <button type="submit" class="place-order-btn" id="placeOrderBtn">
+                    <span>
+                        Place Order
+                    </span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+
+                <div class="secure-note">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>
+                        Your information is securely protected.
+                    </span>
+                </div>
+            </aside>
+
+        </section>
+
+    </main>
+
+
+<!-- ============================ -->
+<!-- CONFIRM ORDER FINAL STAGE POP UP WHEN CLICK-->
+<!-- ============================ -->
+
+    <div class="order-confirmation" id="orderConfirmation">
+
+    <div class="confirmation-box">
+
+        <!-- Close Button -->
+        <button class="close-confirmation" id="closeConfirmation">
+            &times;
+        </button>
+
+        <h2>Confirm Your Order</h2>
+
+        <p class="confirmation-subtitle">
+            Please review your information before placing your order.
+        </p>
+
+
+        <!-- CUSTOMER INFORMATION -->
+
+        <div class="confirmation-section">
+            <h3>Customer Information</h3>
+
+            <div class="confirmation-row">
+                <span>Name</span>
+                <strong id="confirmName"></strong>
+            </div>
+
+            <div class="confirmation-row">
+                <span>Email</span>
+                <strong id="confirmEmail"></strong>
+            </div>
+
+            <div class="confirmation-row">
+                <span>Phone</span>
+                <strong id="confirmPhone"></strong>
+            </div>
+
+            <div class="confirmation-row">
+                <span>Address</span>
+                <strong id="confirmAddress"></strong>
+            </div>
+        </div>
+
+
+        <!-- PAYMENT -->
+
+        <div class="confirmation-section">
+            <h3>Payment Method</h3>
+            <div class="confirmation-row">
+                <span>Payment</span>
+                <strong id="confirmPayment"></strong>
+            </div>
+        </div>
+
+
+        <!-- ORDER ITEMS -->
+
+        <div class="confirmation-section">
+            <h3>Your Order</h3>
+            <div id="confirmItems"></div>
+        </div>
+
+
+        <div class="confirmation-total">
+            <span>Total</span>
+            <strong id="confirmTotal">
+                ₱0
+            </strong>
+        </div>
+
+
+        <div class="confirmation-actions">
+
+            <button
+                type="button"
+                class="edit-order-btn"
+                id="editOrderBtn">
+                Edit Order
+            </button>
+
+            <button
+                type="button"
+                class="confirm-order-btn"
+                id="confirmOrderBtn">
+                Confirm Order
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+ <!-- SUCCESS ORDER FORM -->
+ <!-- ======================== -->
+<div class="order-success" id="orderSuccess">
+
+    <div class="success-box">
+
+        <div class="success-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <h2>Order Confirmed!</h2>
+
+        <p>
+            Thank you for your purchase.
+            Your order has been successfully placed.
+        </p>
+
+        <div class="order-reference">
+
+            <span>Order Number</span>
+
+            <strong id="orderNumber">
+                ORD-00000000
+            </strong>
+
+        </div>
+
+        <div class="success-total">
+
+            <span>Total</span>
+
+            <strong id="successTotal">
+                ₱0
+            </strong>
+
+        </div>
+
+        <button
+            class="continue-shopping-btn"
+            id="continueShoppingBtn">
+
+            Continue Shopping
+
+        </button>
+
+    </div>
+
+</div>
+<!-- ==================================================================== -->
+
+
+<!-- GCASH FORM  -->
+<section class="gcash-main-container">
+        <div class="gcash-form payment-form">
+            <h3>SCAN QR CODE</h3>
+            <span>This is sample QRCode only</span>
+            <div class="qrcode"></div>
+        </div>
+</section>
+
+
+<!-- PAYMAYA FORM  -->
+<section class="paymaya-main-container">
+        <div class="paymaya-form">
+            <h3>SCAN QR CODE</h3>
+            <span>This is sample QRCode only</span>
+            <div class="qrCode"></div>
+        </div>
+</section>
+
+
+<!-- CALCULATOR SECTION-->
+<section class="calculator-main">
+
+    <div class="debit-overlay"></div>
+        <!-- Credit/Debit Card -->
+      <div class="creditCard" id="creditCard-container">
+            <div>
+                <label for="card">Card Number</label>
+                <p>Note: Convert Dollar to Peso before you purchase</p>
+                <input type="text" name="card" id="card" placeholder="Your card number">
+            </div>
+            <div>
+                <label for="expiry">Expiry Date</label>
+                <input type="date" name="expiry "id="expiry" placeholder="MM/YY">
+            </div>
+            <div>
+                <label for="cvv">CVV</label>
+                <input type="number" name="cvv" id="cvv" placeholder="123">
+            </div>
+
+            <div class="dollar-container">
+                <h2>Convert USD to PHP</h2>
+                <p><span id="dollar-rate">₱53.50</span> per $1</p>
+                    <label for="dollarInput">Enter Amount in USD:</label>
+                    <input type="number" id="dollarInput" placeholder="e.g. $100"required>
+
+                    <br><button id="convertToPeso">Convert</button>
+                        <button class="debit-closebtn">Close</button>
+
+                    <div class="result-convertion" id="result-convertion"></div>
+
+            </div>
+      </div>
+
+    <!-- Calculator Monthly & Yearly interest -->
+        <div class="calculator-overlay"></div>
+        <div id="calculator-container" class="calculator-container">
+            
+            <h2 class="cal-title">Monthly & Yearly Interest Calculator</h2>
+            <p>Compute Interest</p>
+
+            
+                <label for="principal">Total Amount Order</label>
+                <input type="number" id="principal" placeholder="Enter total amount order">
+
+                <div class="note">Monthly interest: 2%</div>
+
+                <label for="years">Minimum of 3Months:</label>
+                <input type="number" id="months" placeholder="Months of Installment"><br>
+                
+                <div class="btn-container">
+                    <button id="calculateInterest">Calculate</button>
+                    <button id="resetCalcBtn">Reset</button>
+                    <button id="calc-closebtn">Close</button>
+                </div>
+           
+
+            <div class="results" id="results"></div>
+        </div>
+</section>
+
+
+    <script type="module" src="js/placeorder.js"></script>
+    <script type="module" src="js/updatecart.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/darkmode.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script>
+        new QRCode(document.querySelector(".qrcode"), {
+            text: "https://example.com/payment",
+            width: 200,
+            height: 200
+        });
+    </script>
+
+    <script>
+        new QRCode(document.querySelector(".qrCode"), {
+            text: "https://example.com/payment",
+            width: 200,
+            height: 200
+        });
+    </script>
+    
+
+</body>
+</html>
+
+</body>
+</html>
