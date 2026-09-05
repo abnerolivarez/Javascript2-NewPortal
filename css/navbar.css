@@ -1,0 +1,596 @@
+/* Default CSS */
+*{
+    box-sizing: border-box;
+    /* font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+    */ 
+    /* font-family: "Audiowide", sans-serif; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ img{
+    max-width: 100%;
+    height: auto;
+
+ }
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+/* ============================================= */
+
+
+.register-container{
+    width: min(1600px 100%);
+    margin: 0 auto;
+    height: clamp(40px, 8vw, 50px);
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.682);
+    
+    margin-bottom: -12px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.logreg-container{
+    width: min(1100px, 100%);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    z-index: 5;
+
+    .logreg-hphone-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logreg-hphone{
+        font-size: 16px;
+        cursor: pointer;
+        width: 20px;
+        margin-bottom: -7px;
+        
+    }
+        .prem-headphone{
+            font-size: 8px;
+            font-weight: 500;
+            color: #000;
+        }
+    
+    
+    .login-register-container{
+        display: flex;
+    }
+    
+
+    .loginbtn:hover, .registerbtn:hover{
+        transition: all .3s ease-in-out;
+        color: #ff5900;
+    }
+    .reglog{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    .reglog a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .social-media-icon{
+        display: flex;
+        gap: 16px;
+        font-size: 16px;
+        margin-right: 25px;
+        
+        cursor: pointer;
+    }
+
+     .fa-facebook:hover {
+            transition: all .3s ease;
+            color: #0044ff;
+        }
+    .fa-twitter:hover{
+        transition: all .3s ease;
+        color: #00aeff;
+    }
+
+    .fa-instagram:hover{
+        transition: all .3s ease;
+        
+        color: #ff00d9; 
+    }
+
+}
+
+/* LOGOUT BUTTON */
+.logout-container {
+    display: none;
+}
+
+.logoutbtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    transition: all .3s ease;
+    &:hover{
+        color: #ff4400;
+    }
+}
+
+
+/* =====Navbar Section====== */
+.navbar-container{
+    width: calc(100% - 50px);
+    max-width: 1100px;
+    height: clamp(55px, 7vw, 70px);
+
+    margin: 0 auto;
+
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.682);
+
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    border-radius: 5px;
+    z-index: 1000;
+
+
+    .icon-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+
+
+        .icon-glass{
+            border: none;
+            transition: all .3s ease;
+
+            &:hover{
+                color:#ff5900;
+                transform: scale(1.2)
+            }
+        }
+        .icon-user{
+            margin: 0 12px;
+        }
+    }
+
+    .cart-container{
+        position: relative;
+    }
+
+    .cart-number{
+        position: absolute;
+        top: -18%;
+        left: 70%;
+        font-family: Roboto, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        
+        text-align: center;
+        color: #f3f3f3;
+        background-color: #ff2600;
+        border-radius: 50%;
+        width: 21px;
+        height: 21px;
+    }
+    
+    .cart-icon{
+        width: 30px;
+        height: auto;
+    }
+
+    
+}
+
+
+
+
+.navbar-container.hide{
+    transition: transform 0.3s ease;
+    top: 0;
+}
+
+
+.navlogo-container{
+    .arc{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+     .navbar-logo{
+        width: 40px;
+        min-width: 30px;
+    }
+    .company-name{
+        font-family: "Audiowide", sans-serif;
+        color: #000; 
+    }
+    .hphone{
+        color:#ff6a00;
+        font-weight: 600;
+    }  
+}
+
+    .burgerBtn-container{
+        display: none;
+
+        .burger-Menubtn{
+            background-color: #000;
+            height: 3px;
+            width: 25px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+       
+}
+
+.bx-sun{
+    color: #ffab0e;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    
+
+    li a{
+        text-decoration: none;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: #ff5900;
+        } 
+    }
+
+    .theme-btn{
+        border: none;
+        background: none;
+        color: #000;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    
+}
+
+.magnifying-glass{
+    position: absolute;
+    top: 32%;
+    left: 94%;
+    cursor: pointer;
+    transition: all.3s ease;
+    &:hover{
+        transform:scale(1.2);
+        color: #ff5900;
+    }
+    
+}
+
+.search-container {
+    width: calc(100% - 50px);
+    max-width: 600px;
+    
+    position: fixed;
+    top: calc(8.5% + 5rem);
+    left: 50%;
+    transform: translate(-50%, -10px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Show & Hide */
+.search-container.show {
+    opacity: 1;
+    visibility: visible;
+    top: 19%;
+    transform: translate(-50%, 0);
+}
+
+.search-container.hide{
+    transition: transform 0.3s ease;
+    top: 10%;
+}
+
+.search-container input:focus {
+    border: 2px solid #ff5900;
+    outline: none;
+}
+
+.searchbtn {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:1px solid #ff2600;
+    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ====================END OF NAVBAR SECTION ============================*/
+
+
+
+/* =======Hero Section====== */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100% - 50px);
+    max-width: 900px;
+    margin: 0 auto;
+    height: 600px;
+
+    gap: 50px;
+    margin-bottom: -80px;
+    
+    /* position: relative;
+    overflow: hidden; */
+}
+
+
+/* =========================
+   LEFT SIDE - TITLE
+========================= */
+
+.hero-title {
+    flex: 1;
+    font-family: "Audiowide", sans-serif;
+    opacity: 0;
+    z-index: 10;
+    margin-top: 100px;
+    
+}
+
+.hero-title.animate {
+    animation: titleZoom 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+/* =========================
+   RIGHT SIDE - IMAGE
+========================= */
+
+.hero-overlay-container {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    position: relative;
+}
+
+
+/* Images */
+
+.hero-overlay-container .hero-bg {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    opacity: 0;
+
+    transform: scale(1);
+
+    transition:
+        opacity 1.5s ease,
+        transform 6s cubic-bezier(0.22, 1, 0.36, 1);
+
+        filter:
+            drop-shadow(0 12px 8px rgba(44, 44, 44, 0.645))
+            drop-shadow(0 25px 25px rgba(60, 60, 60, 0.799));
+}
+
+
+.hero-overlay-container .hero-bg.active {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   GRADIENT BACKGROUND
+========================= */
+
+.overlay-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: radial-gradient(
+        circle at 70% 40%,
+        #ddddddaa 0%,
+        #d8c29d4e 70%,
+        #ececec00 100%
+    );
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.hero-title h1 {
+    color: #1e1e1eee;
+    margin-bottom: -3rem;
+    font-size: 32px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero-title .best-hphone {
+    font-size: 50px;
+    color: #ff5900;
+    font-weight: 600;
+    margin-bottom: -2.5rem;
+}
+
+.hero-title .wireless {
+    font-size: 30px;
+    color: #ff5900;
+    font-weight: 300;
+}
+
+
+/* =========================
+   TITLE ANIMATION
+========================= */
+
+@keyframes titleZoom {
+
+    0% {
+        opacity: 0;
+
+        transform: translateY(100px);
+
+        filter: blur(8px);
+    }
+
+    60% {
+        opacity: 0.8;
+
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: translateY(0);
+
+        filter: blur(0);
+    }
+}
+
+
+
+/* SEARCHING LOADING ANIMATION */
+.search-loading {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.78);
+    z-index: 9999;
+}
+
+
+.search-loading.active {
+    display: flex;
+}
+
+
+/* =========================
+   LOADING CONTENT
+========================= */
+
+.search-loading-content {
+    width: min(90%, 400px);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+
+/* =========================
+   PERCENTAGE
+========================= */
+
+.loading-number {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   PROGRESS CONTAINER
+========================= */
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+
+    background:linear-gradient(
+        90deg, 
+        #f1f1f1,
+        lab(52.51% 63.08 64.22),
+        #e90000
+    );
+    
+    border-radius: 20px;
+    transition: width 0.15s ease;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.search-loading p {
+    margin-top: 18px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+
+
+

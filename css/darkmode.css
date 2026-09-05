@@ -1,0 +1,159 @@
+/* DARK MODE */
+body.dark-mode{
+    /* margin: 0; */
+    padding: 0;
+    background: #3c3c3c;
+    
+
+    .register-container, 
+    .navbar-container, .headset-container,
+    .featured-container, .featured-product-details,
+    .footer-container, .shop-js-container, .checkout-progress,
+    .checkout-card, .confirmation-box, .success-box
+    
+    
+    {
+        background-color: #1e1e1e;
+       
+    }
+
+    .navbar-container,
+    .featured-container .featured-navbar-links, 
+    .checkout-progress{
+        box-shadow: 0 4px 10px #bebebedb;
+    }
+
+
+    .item-main{
+        background-color: transparent;
+    }
+    
+    .image-container{
+        background-color: #232323;
+        border-radius: 12px;
+    }
+
+    .specs-container{
+        background-color: #232323;
+        z-index: 500;
+    }
+
+    .burger-Menubtn{
+        background-color: #dedede;
+    }
+
+    .time{
+        background-color: #717171;
+    }
+
+    .review-card, .cart-main-container, 
+    .product-details-containerjs,.order-reference{
+        background-color: #383838;
+    }
+
+    
+    .navbar-links li a, .loginbtn , 
+    .registerbtn, .icon-container .icon-glass,
+    .tech-card span,.philosophy-content p, .prem-headphone{
+        color: #d8c29d;
+    }
+
+    .counter, .tech-card p, .bill-wave, .bx-money{
+        color: #000;
+    }
+
+    .header-devider{
+        background: linear-gradient(
+        45deg,
+        transparent,
+        #c5c5c5,
+        transparent
+
+        );
+    }
+
+    .logreg-container, .reglog a, 
+     .icon-glass, 
+    .icon-user, .company-name, 
+    .image-container, .specs-container,
+    .headset-container,.cart-main-container,
+    .featured-container, .product-details-containerjs,
+    .footer-container, .shop-main-title,
+    .shop-content, .shop-menu-container .shop-menu,
+    .back-home, .checkout-logo strong, .secure-checkout,
+    .checkout-progress .small, .checkout-card, 
+    .confirmation-box , .success-box 
+    {
+         color: #d7d7d7;
+    }
+
+    .hero-title h1, .footer-column a, 
+    .newsletter-form input, .footer-bottom a,
+    .featured-main h2
+    
+    {
+        color: #fff;
+    }
+
+    .shipping-circle{
+        background: #e5e5e5;
+        color: #777;
+    }
+
+    .shipping-line{
+        background: #e5e5e5;
+    }
+
+/* =====FOOTER==== */
+    .footer-column a:hover, .footer-bottom a:hover{
+        color: #1b9600;
+    }
+
+
+    .social-links a:hover {
+        background: #00ff88;
+        color: #000;
+        border-color: #00ff88;
+    }
+
+/* ========================= */
+
+    .navbar-links li a:hover,.back-home:hover, .shop-menu:hover{
+        color: #f45500;
+    }
+
+    .icon-delivery {
+        color: #1aab01;
+    }
+
+    .bx-moon, .fa-lock{
+        color: #f45500;
+    }
+
+
+    .circle-four, .circle-five, .circle-six{
+        border: 1px solid #d8c29d18;
+        z-index: 1;
+    }
+
+    .premium-footer {
+        background: #090909;
+        color: #ffff;
+    }
+
+    @media(max-width:768px) {
+        .navbar-container .navbar-links{
+            background-color: #000000c5;
+        }
+    }
+
+.footer-brand h2 span {
+       -webkit-text-stroke: 1px #f7f6f6;
+}
+
+.shop-js, .sound-wave span{
+    background-color: #1b9600;
+}
+
+    transition: background 0.3s, color 0.3s;
+}

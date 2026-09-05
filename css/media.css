@@ -1,0 +1,383 @@
+@media(max-width:1250px){
+
+    .hero-container{
+        margin-bottom: -14%;
+    }
+
+    .hero-title{
+        margin-left: 32px;
+    }
+
+    .hero-overlay-container .hero-bg {
+        align-items: center;
+        width: 70%;
+        top: -80px;
+    }
+
+     .headphone-main{
+        margin-top: -100px;
+                
+        }
+     .arrow-featured-container{
+        margin-top: -25px;
+    }
+}
+
+
+
+    
+
+
+
+@media(max-width:768px){
+
+.navbar-container{
+    
+        .navbar-links{
+            display: none;
+            flex-direction: column;
+            background-color: #cecece;
+            position:absolute;
+            top: 70%;
+            right: 0;
+            padding: 16px;
+            width: 200px;
+            text-align: center;
+            
+        }
+
+        .navbar-links.show{
+            display: flex;
+            margin-top: 16px;
+            
+        }
+        
+        .burgerBtn-container{
+            display: block;
+            margin-left: 10px;
+            transition: all .3s ease-in-out;
+        }
+        
+
+        .burgerBtn-container.active .burger-Menubtn:nth-child(1){
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .burgerBtn-container.active .burger-Menubtn:nth-child(2){
+            opacity: 0;
+        }
+
+        .burgerBtn-container.active .burger-Menubtn:nth-child(3){
+            transform: translateY(-7px) rotate(-45deg);
+        }
+    
+    }
+
+    .hero-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: -280px;
+    }
+
+    .hero-overlay-container .hero-bg {
+        top: -330px;
+        width: 30%;
+        
+    }
+
+     .item-main .image-container .headphone-img{
+        width: 250px;
+        margin-top: 20px;
+                
+        }
+
+    .featured-navbar-links{
+        font-size: 8px !important;
+        
+    }
+
+     .item-main .image-container .arrow-featured-container {
+        display: flex;
+        margin-bottom: -70px;
+    }
+
+
+    .item-main .image-container .arrow-headphone-image {
+        display: flex;
+        justify-content: center;
+    }
+    .image-container{
+        margin-bottom: 32px;
+    }
+
+    .headset-image{
+        grid-template-columns: 1fr;
+    }
+    .headset-img{
+        width: 100px;
+    }
+
+    .headset-content{
+        margin-bottom: 5px;
+        place-items: center;
+        width: 100%;
+        margin-top: 32px;
+    }
+    .headset-content p{
+        font-size: 32px;
+    }
+    
+    .featured-item-container, 
+    .headset-title, 
+    .headset-bottom-content{
+        display: none;
+    }
+
+    .arrow-featured-container{
+        margin-top: -15px;
+    }
+
+    .arrow-button-container{
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .image-flex{
+        flex-direction: column;
+    }
+
+
+
+    .search-container.show{
+        top: 20%;
+    }
+
+ .search-container.hide{
+        top: 10%;
+    }
+
+
+.cart-main-container.show{
+    top: 16%;
+}
+
+.cart-main-container.hide{
+    top: 10%;
+}
+
+
+.headset-container .boxicon-icon {
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+    .feature-item {
+        width: 100%;
+    }
+
+    /* Remove the desktop dividers */
+    .boxicon-icon .feature-item::after {
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+    .search-container.show{
+        top: 18%;
+        z-index: 10;
+    }
+    .search-container.hide{
+        top: 9%;
+    }
+    .cart-main-container{
+        top: 18%;
+    }
+
+    
+
+   .hero-overlay-container .hero-bg {
+        width: 40%;
+        top: -55%;
+       
+    }
+
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .featured-main{
+        margin-bottom: 16px;
+    }
+
+    .featured-container{
+        width: calc(100% - 50px);
+        
+        
+    }
+
+    .featured-navbar-links{
+        font-size: 6px !important;
+    }
+
+    .item-main{
+        margin-bottom: 16px;
+    }
+
+
+    .star-container {
+        justify-content: center;
+        
+    }
+
+     .arrowbtn.prev {
+        left: 10px;
+    }
+
+    .arrowbtn.next {
+        right: 10px;
+    }
+    
+
+     .item-container-grid-two{
+        margin: auto;
+     }
+
+    .image-container{
+        .image-details{
+            display: none;
+        }
+    }
+
+    .headphone-details{
+        h2{
+            text-align: center;
+        }
+        
+    }
+
+    .specs-content{
+        font-size: 10px;
+        text-align: center;
+        gap: 1px;
+       
+    }
+
+    .shop-menu-container, .shop-menu{
+        font-size: 10px;
+    }
+
+    .shop-container .shop-image-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:368px){
+  .navbar-logo,.prem-headphone {
+    display: none;
+  }
+.magnifying-glass{
+    left: 90%;
+}
+
+ .search-container.show{
+    top: 18%;   
+}
+    .search-container.hide{
+        top: 9%;
+    }
+    .cart-main-container{
+        top: 18%;
+    }
+    
+
+.hero-container{
+       justify-content: center;
+       align-items: center;
+
+
+
+    .hero-overlay-container .hero-bg {
+        width: 70%;
+        top: -50%;
+    }
+    
+        /* .hero-title {
+            margin-left: 15px;
+        } */
+
+        .hero-title h1 {
+            font-size: clamp(15px, 4vw, 30px);
+            margin-bottom: -28px;
+        }
+
+        .best-hphone {
+            font-size: clamp(25px, 8vw, 80px);
+            margin-bottom: -35px;
+        }
+
+        .wireless {
+            font-size: clamp(32px, 8vw, 80px);
+        }
+    }
+
+    .cart-item-info{
+        font-size: 11px;
+    }
+
+    .addcart, .checkout{
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: auto;
+        margin-bottom: 10px;
+        
+    }
+
+    .free-delivery{
+        font-size: 6px !important;
+    }
+
+   
+    .specs-content{
+        font-size: 7px;
+       
+       
+    }
+
+.item-container-grid{
+    padding: 40px;
+    place-items: center;
+
+    }
+
+
+    .shop-menu-container, .shop-menu{
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .shop-container .shop-image-grid{
+        grid-template-columns: 1fr;
+    }
+
+    
+}
